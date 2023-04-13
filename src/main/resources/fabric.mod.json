@@ -1,33 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cobstructor",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Celestial Obstructor",
+  "description": "Adds Celestial Obstructor block which prevents mob spawns in a configured area!",
   "authors": [
-    "Me!"
+    "Kellegram"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.kellegram.xyz",
+    "sources": "https://github.com/Kellegram/celestial-obstructor"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/cobstructor/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "xyz.kellegram.celestial.obstructor.CelestialObstructor"
+    ],
+    "client": [
+      "xyz.kellegram.celestial.obstructor.CelestialObstructorClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cobstructor.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.4",
     "fabric": "*",
     "minecraft": "~1.18.2",
     "java": ">=17"
