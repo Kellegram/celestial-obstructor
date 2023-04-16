@@ -1,4 +1,6 @@
 {
-    "parent": "cobstructor:block/celestial_obstructor"
+  "parent": "item/generated",
+  "textures": {
+      "layer0": "cobstructor:item/celestial_obstructor"
   }
-
+}
